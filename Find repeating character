@@ -1,0 +1,35 @@
+# include <iostream>
+# include <vector>
+
+using namespace std;
+
+/* int main() {
+
+string str = find_repeating_char (int strlength = n)
+
+for (int i = 0; i < strlength; i++) {
+  for (int j = i+1; j < strlength; j++) {
+  
+  if (str[i] == str[j]) {
+  
+  cout << str [i];
+
+}
+return '\0';
+}
+}
+
+return 0;
+}*/
+
+//apparently smths wrong w my first attempt
+
+char first_repeating_character (string str) {
+  for (int i = 0; i < str.length(); i++) {
+    for(int j = 0; j < str.length(); j++) {
+      if (str.at(i) == str.at(j)){
+        return str.at(i);
+    }
+  }
+  return '\0';
+}
