@@ -16,3 +16,52 @@ bool find_pairs_that_sum_to_k (int* arr; int arr_length; int k){
       }
      
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# include <iostream>
+# include <vector>
+
+using namespace std;
+
+bool find_pairs_that_sum_to_k (int* arr, int arr_length, int k) {
+
+for (i = 0; i < arr_length; i++){
+for (j = i + 1 ; j < arr_length; j++){
+
+if (arr[i] + arr[j] == k){
+
+return true;
+}
+}
+
+return false;
+}
