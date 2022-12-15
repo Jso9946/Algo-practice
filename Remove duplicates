@@ -1,0 +1,16 @@
+# include <iostream>
+# inlcude <vector>
+
+using namspace std;
+
+int remove_duplicates (string arr);
+
+for (i = 0; i < arr.length(); i++){
+  for (j = i+1 ; j < arr.length(); j++) {
+    if (str.at(i) ==str.at(j)) {
+    
+   return str.at(i);
+   }
+ }
+ return remove_duplicates (string arr);
+ }
