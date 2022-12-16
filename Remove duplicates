@@ -3,7 +3,7 @@
 
 using namspace std;
 
-int remove_duplicates (string arr);
+/* int remove_duplicates (string arr);
 
 for (i = 0; i < arr.length(); i++){
   for (j = i+1 ; j < arr.length(); j++) {
@@ -14,3 +14,13 @@ for (i = 0; i < arr.length(); i++){
  }
  return remove_duplicates (string arr);
  }
+ */
+
+
+vector <int> remove_duplicates(vector<int> arr) {
+  vector<int> no_duplicates_arr;
+  for(int i = 0; i < arr.size(); i++){
+    if(find(no_duplicates_arr.begin(), no_duplicates_arr.end(), arr[i]) == no_duplicates_arr.end())
+      no_dupliacates_arr.push_back(arr[i]);
+  return no_duplicates_arr;
+}
