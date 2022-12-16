@@ -1,0 +1,13 @@
+# include <iostream>
+# include <vector>
+
+using namespace std;
+
+char first_repeating_character(string str){
+  unordered_map<char,bool> visited;
+  for(char const& ch : str){
+    if(visited.find(ch) != visited.end()) return ch;
+    else visited[ch] = true;
+  }
+  return '\0';
+}
